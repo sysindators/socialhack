@@ -466,7 +466,7 @@ def setting():
 def passwrd():
 	print('')
 	print(f'{kk}[!]> {h}Enable and Disable Airplane mode after 500 or 1000 to reduce IP spam\n')
-	print(f'RESULTS {H}OK{P} SAVED TO FOLDERS {H}{okc}') 
+	print(f'{P}RESULTS {H}OK{P} SAVED TO FOLDERS {H}{okc}') 
 	print(f'{P}RESULTS {K}CP{P} SAVED TO FOLDERS {K}{cpc}\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
