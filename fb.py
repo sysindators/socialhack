@@ -212,12 +212,12 @@ def login_lagi334():
   find_token = re.search("(EAAG\w+)", data.text)
   ken=open(".token.txt", "w").write(find_token.group(1))
   cok=open(".cok.txt", "w").write(cookie)
-  wan(f'>> {P}LOGIN {H}(SUCCES)');time.sleep(1)
+  wan(f'\n>> {P}LOGIN {H}(SUCCES)');time.sleep(1)
   os.system('python fb.py')
  except Exception as e:
   os.system("rm -f .token.txt")
   os.system("rm -f .cok.txt")
-  wan(f'>> {P}LOGIN {M}(FAILED)')
+  wan(f'\n>> {P}LOGIN {M}(FAILED)')
   exit()
 
 def menu(my_name,my_id):
@@ -236,7 +236,7 @@ def menu(my_name,my_id):
 	print(f'{P}[1]> {h}Crack Public')
 	print(f'{P}[2]> {h}Crack Results')
 	print(f'{P}[0]> {h}Exit')
-	wan = input('\n{P}Select {h}> {P}')
+	wan = input(f'\n{P}Select {h}> {P}')
 	print('')
 	if wan in ['1']:
 		dump_massal()
