@@ -513,7 +513,7 @@ def crack(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{B}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -559,7 +559,7 @@ def crackfree(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{B}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -605,7 +605,7 @@ def crackmbasic(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{B}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
