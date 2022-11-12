@@ -179,6 +179,7 @@ def banner():
 ´´´´´´´¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶´´´´´´´
 
    Author : Darksin
+   Github : github.com/sysindators
    Website : blackhat.hack""")
 def logo2():
 	return str(f"""{M}>{K}>{H}> {P}CHECKING FOR LOGIN {H}>{K}>{M}>""")
