@@ -402,8 +402,8 @@ def dump_massal():
 def setting():
 	print(f'{P}>>>>>[{H}ADD ID CRACK{P}]<<<<<')
 	print(f'{P}[1]> JOIN ID {B}10000=10006{M} (NOT RECOMMENDED)')
-	wan(f'{P}[2]> JOIN ID{B}10005=10008{H} (MOST RECOMMENDED)')
-	wan(f'{P}[3]> JOIN ID{B}RANDOM{H} (RECOMMENDED)')
+	wan(f'{P}[2]> JOIN ID {B}10005=10008{H} (MOST RECOMMENDED)')
+	wan(f'{P}[3]> JOIN ID {B}RANDOM{H} (RECOMMENDED)')
 	print('')
 	hu = input(f'{P}({H}+{P}) ᴀᴅᴅ ɪᴅ ᴄʀᴀᴋ : ')
 	if hu in ['1','01']:
@@ -511,7 +511,7 @@ def crack(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING%s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -557,7 +557,7 @@ def crackfree(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING%s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -603,7 +603,7 @@ def crackmbasic(idf,pwv):
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print(f'\r{H}CRACKING%s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print(f'\r{H}CRACKING %s%s/%s {H}OK:%s/{K}CP:%s {H}%s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
