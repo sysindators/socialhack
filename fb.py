@@ -235,7 +235,7 @@ def menu(my_name,my_id):
 	print(f'{P}[1]> {h}Crack Public')
 	print(f'{P}[2]> {h}Crack Results')
 	print(f'{P}[0]> {h}Exit')
-	wan = input('\nSelect > ')
+	wan = input('\n{P}Select {h}> {P}')
 	print('')
 	if wan in ['1']:
 		dump_massal()
@@ -358,7 +358,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('HOW MANY USERS? > '))
+		jum = int(input(f'{P}HOW MANY USERS? {h}> {P}'))
 	except ValueError:
 		print(f'{M}[!]> {kk}Wrong input ')
 		exit()
@@ -369,7 +369,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('ENTER ID TO > '+str(yz)+' : ')
+		kl = input(f'{P}ENTER ID TO '+str(yz)+' {h}> {P}')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -387,7 +387,7 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'Total Id Collected {h}'+str(len(id)))
+		print(f'{P}Total Id Collected {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
@@ -400,12 +400,12 @@ def dump_massal():
 		
 
 def setting():
-	print(f'{P}>>>>>[{H}ADD ID CRACK{P}]<<<<<')
+	print(f'\n{P}>>>>>[{H}ADD ID CRACK{P}]<<<<<\n')
 	print(f'{P}[1]> JOIN ID {B}10000=10006{M} (NOT RECOMMENDED)')
 	wan(f'{P}[2]> JOIN ID {B}10005=10008{H} (MOST RECOMMENDED)')
 	wan(f'{P}[3]> JOIN ID {B}RANDOM{H} (RECOMMENDED)')
 	print('')
-	hu = input(f'{P}({H}+{P}) ᴀᴅᴅ ɪᴅ ᴄʀᴀᴋ : ')
+	hu = input(f'{P}({H}+{P}) ADD ID CRACK > ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -432,9 +432,9 @@ def setting():
 	print('')
 	print(f'{P}[1]> MOBILE {h}(m.facebook.com)')
 	print('')
-	print(f'{P}[2]> MBASIC {h}(mbasic.facebook.com')
+	print(f'{P}[2]> MBASIC {h}(mbasic.facebook.com)')
 	print('')
-	print(f'{P}[3]> FREE {h}(free.facebook.com')
+	print(f'{P}[3]> FREE {h}(free.facebook.com)')
 	print('')
 	hc = input(f'{P}({H}+{P}) ADD METHOD > ')
 	wel='# ADD PASWORD MANUAL? Y/n'
