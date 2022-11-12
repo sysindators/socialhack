@@ -346,7 +346,7 @@ def dump_massal():
 		print(f'{M}[!]> {kk}Wrong input ')
 		exit()
 	if jum<1 or jum>100:
-		print(f'{M}[!]> {kk}Failed Dump Id maybe id is not public ')
+		print(f'{M}[!]> {kk}Failed Dump ID maybe ID is not public ')
 		exit()
 	ses=requests.Session()
 	yz = 0
@@ -370,7 +370,7 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'{P}Total Id Collected {h}'+str(len(id)))
+		print(f'{P}Total ID Collected {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
