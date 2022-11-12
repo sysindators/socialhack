@@ -31,7 +31,7 @@ pkg update
 pkg upgrade
 pkg install git python
 git clone https://github.com/sysindators/socialhack
-cd sysindators
+cd socialhack
 pip install -r requirements.txt
 python fb.py
 ```
