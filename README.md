@@ -22,6 +22,7 @@ sudo apt-get update
 sudo apt-get upgrade
 git clone https://github.com/sysindators/socialhack
 cd socialhack
+pip install --upgrade pip
 pip install -r requirements.txt
 python fb.py
 ```
@@ -32,6 +33,7 @@ pkg upgrade
 pkg install git python
 git clone https://github.com/sysindators/socialhack
 cd socialhack
+pip install --upgrade pip
 pip install -r requirements.txt
 python fb.py
 ```
@@ -45,6 +47,7 @@ If everything is installed, please open one of the CMD, Windows PowerShell, or G
 ```bash
 git clone https://github.com/sysindators/socialhack
 cd socialhack
+pip install --upgrade pip
 pip install -r requirements.txt
 python fb.py
 ```
