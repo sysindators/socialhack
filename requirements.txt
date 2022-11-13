@@ -10,5 +10,4 @@ panel
 tree
 markdown
 columns
-text
 progress
