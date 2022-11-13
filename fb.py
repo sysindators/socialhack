@@ -513,8 +513,8 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
 				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
-				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
-				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}')
+				print(f'\n\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				
 				akun.append(idf+'|'+pw)
@@ -563,8 +563,8 @@ def crackfree(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
 				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
-				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
-				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}')
+				print(f'\n\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				
 				akun.append(idf+'|'+pw)
@@ -615,8 +615,8 @@ def crackmbasic(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
 				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
-				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
-				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}')
+				print(f'\n\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
