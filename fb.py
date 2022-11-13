@@ -72,16 +72,16 @@ for x in range(10):
 	F = f'{A}{C}{D}{E}'
 def uaku():
 	try:
-		ua=open('manis.txt','r').read().splitlines()
+		ua=open('ua.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/IKFAR-IFC/f/blob/main/manis.txt').text
-		ua=open('.manis.txt','w')
+		a=requests.get('https://github.com/IKFAR-IFC/IFCV1/blob/main/ua.txt').text
+		ua=open('ua.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.manis.txt','r').read().splitlines()
+		ua=open('ua.txt','r').read().splitlines()
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
