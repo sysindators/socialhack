@@ -30,7 +30,7 @@ python fb.py
 ```bash
 pkg update
 pkg upgrade
-pkg install git python
+pkg install git python rust
 git clone https://github.com/sysindators/socialhack
 cd socialhack
 pip install --upgrade pip
