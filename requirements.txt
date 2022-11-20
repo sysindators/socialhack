@@ -3,6 +3,7 @@ bs4
 datetime
 urllib3
 rich
+numpy
 futures
 console
 table
